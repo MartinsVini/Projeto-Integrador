@@ -1,4 +1,4 @@
-# Lendo pelo Mundo — versão simples
+# Lendo pelo Mundo 
 
 Esta é uma versão didática do projeto, construída principalmente com HTML5 e CSS3.
 
@@ -13,13 +13,6 @@ Esta é uma versão didática do projeto, construída principalmente com HTML5 e
 
 Abra o arquivo `index.html` diretamente no navegador.
 
-Também é possível usar um servidor local, se desejar:
-
-```powershell
-npx.cmd --yes serve@latest .
-```
-
-Depois, acesse o endereço exibido no terminal.
 
 ## Escopo
 
