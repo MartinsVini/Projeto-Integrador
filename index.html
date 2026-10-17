@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lendo pelo Mundo: uma comunidade simples para descobrir livros e compartilhar leituras." />
+    <title>Lendo pelo Mundo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#inicio" aria-label="Lendo pelo Mundo - início">
+          <span class="brand-mark">📖</span>
+          <span>Lendo pelo Mundo</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#mapa">Pontos de leitura</a>
+          <button class="button button-small button-outline" data-open-modal>Entrar</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Comunidade de leitores em Campo Grande</p>
+            <h1>Um livro pode levar você para qualquer lugar.</h1>
+            <p class="hero-text">Encontre histórias, acompanhe suas leituras e descubra pontos para trocar livros perto de você.</p>
+            <div class="hero-actions">
+              <a class="button" href="#catalogo">Explorar livros</a>
+              <button class="button button-light" data-open-modal>Criar cadastro</button>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Resumo do projeto">
+            <span class="hero-card-icon">🌎</span>
+            <p class="quote">“A leitura é uma viagem que começa quando abrimos a primeira página.”</p>
+            <span class="hero-card-caption">Lendo pelo Mundo</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="catalogo">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Descubra sua próxima história</p>
+              <h2>Catálogo de livros</h2>
+            </div>
+            <span class="result-count" id="result-count">6 livros encontrados</span>
+          </div>
+
+          <div class="filters" aria-label="Filtros do catálogo">
+            <label class="search-field">
+              <span class="sr-only">Buscar livro</span>
+              <span aria-hidden="true">⌕</span>
+              <input id="book-search" type="search" placeholder="Buscar por título ou autor" />
+            </label>
+            <label>
+              <span class="sr-only">Filtrar por gênero</span>
+              <select id="genre-filter">
+                <option value="all">Todos os gêneros</option>
+                <option value="romance">Romance</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="brasileira">Literatura brasileira</option>
+                <option value="ficcao">Ficção científica</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="book-grid" id="book-grid">
+            <article class="book-card" data-title="o pequeno principe" data-author="antoine de saint-exupery" data-genre="fantasia" data-book="O Pequeno Príncipe">
+              <div class="book-cover cover-blue"><span>O Pequeno<br />Príncipe</span></div>
+              <div class="book-info">
+                <span class="tag">Fantasia</span>
+                <h3>O Pequeno Príncipe</h3>
+                <p>Antoine de Saint-Exupéry</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+            <article class="book-card" data-title="torto arado" data-author="itamar vieira junior" data-genre="brasileira" data-book="Torto Arado">
+              <div class="book-cover cover-orange"><span>Torto<br />Arado</span></div>
+              <div class="book-info">
+                <span class="tag">Brasileira</span>
+                <h3>Torto Arado</h3>
+                <p>Itamar Vieira Junior</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+            <article class="book-card" data-title="cem anos de solidao" data-author="gabriel garcia marquez" data-genre="romance" data-book="Cem Anos de Solidão">
+              <div class="book-cover cover-green"><span>Cem Anos<br />de Solidão</span></div>
+              <div class="book-info">
+                <span class="tag">Romance</span>
+                <h3>Cem Anos de Solidão</h3>
+                <p>Gabriel García Márquez</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+            <article class="book-card" data-title="capitaes da areia" data-author="jorge amado" data-genre="brasileira" data-book="Capitães da Areia">
+              <div class="book-cover cover-purple"><span>Capitães<br />da Areia</span></div>
+              <div class="book-info">
+                <span class="tag">Brasileira</span>
+                <h3>Capitães da Areia</h3>
+                <p>Jorge Amado</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+            <article class="book-card" data-title="orgulho e preconceito" data-author="jane austen" data-genre="romance" data-book="Orgulho e Preconceito">
+              <div class="book-cover cover-pink"><span>Orgulho e<br />Preconceito</span></div>
+              <div class="book-info">
+                <span class="tag">Romance</span>
+                <h3>Orgulho e Preconceito</h3>
+                <p>Jane Austen</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+            <article class="book-card" data-title="duna" data-author="frank herbert" data-genre="ficcao" data-book="Duna">
+              <div class="book-cover cover-brown"><span>Duna</span></div>
+              <div class="book-info">
+                <span class="tag">Ficção científica</span>
+                <h3>Duna</h3>
+                <p>Frank Herbert</p>
+                <button class="book-action" data-list-action>+ Quero ler</button>
+              </div>
+            </article>
+          </div>
+          <p class="empty-message" id="empty-message" hidden>Nenhum livro encontrado. Tente outra busca.</p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="como-funciona">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">É simples começar</p>
+            <h2>Como funciona</h2>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card"><span class="step-number">01</span><h3>Encontre um livro</h3><p>Pesquise no catálogo por título, autor ou gênero.</p></article>
+            <article class="step-card"><span class="step-number">02</span><h3>Monte sua lista</h3><p>Marque os livros que você quer ler e acompanhe seu progresso.</p></article>
+            <article class="step-card"><span class="step-number">03</span><h3>Compartilhe</h3><p>Descubra pessoas e pontos de leitura próximos de você.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="mapa">
+        <div class="container map-layout">
+          <div>
+            <p class="eyebrow">Leitura perto de você</p>
+            <h2>Pontos de troca em Campo Grande</h2>
+            <p class="section-text">Esta é uma demonstração visual dos locais que poderão receber trocas, encontros e pequenas bibliotecas comunitárias.</p>
+            <div class="location-list">
+              <div class="location-item"><span class="location-pin">●</span><div><strong>Praça Ary Coelho</strong><small>Centro · Troca de livros</small></div></div>
+              <div class="location-item"><span class="location-pin">●</span><div><strong>Parque das Nações Indígenas</strong><small>Jardim Veraneio · Leitura ao ar livre</small></div></div>
+              <div class="location-item"><span class="location-pin">●</span><div><strong>Biblioteca Pública Estadual</strong><small>Amambaí · Acervo comunitário</small></div></div>
+            </div>
+          </div>
+          <div class="map-card" aria-label="Mapa ilustrativo de Campo Grande">
+            <span class="map-label">CAMPO GRANDE / MS</span>
+            <span class="map-road road-one"></span><span class="map-road road-two"></span><span class="map-road road-three"></span>
+            <span class="map-marker marker-one">1</span><span class="map-marker marker-two">2</span><span class="map-marker marker-three">3</span>
+            <span class="map-compass">N<br /><small>↑</small></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content"><strong>📖 Lendo pelo Mundo</strong><span>Projeto Integrador II · MVP educacional</span></div>
+    </footer>
+
+    <div class="modal-backdrop" id="auth-modal" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" data-close-modal aria-label="Fechar">×</button>
+        <p class="eyebrow">Comece sua jornada</p>
+        <h2 id="modal-title">Entrar ou criar cadastro</h2>
+        <p class="modal-text">Nesta versão, o formulário é apenas demonstrativo.</p>
+        <form id="auth-form">
+          <label>Nome ou e-mail<input required type="text" placeholder="Digite seu nome" /></label>
+          <label>Senha<input required type="password" placeholder="Digite sua senha" /></label>
+          <button class="button" type="submit">Continuar</button>
+        </form>
+        <p class="form-message" id="form-message" role="status"></p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
