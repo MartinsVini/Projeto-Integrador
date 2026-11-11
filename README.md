@@ -18,7 +18,7 @@ Abra o arquivo `index.html` diretamente no navegador.
 
 O protótipo web usa o armazenamento local do navegador. O Módulo 3 acrescenta uma atividade independente de banco de dados sobre os locais de leitura e as leituras do clube.
 
-## Módulo 3 — SQLite
+## Banco de dados — SQLite
 
 No Windows, abra o PowerShell na raiz deste repositório. Ambiente validado com Python 3.13.7 e SQLite 3.50.4, incluído no Python.
 
