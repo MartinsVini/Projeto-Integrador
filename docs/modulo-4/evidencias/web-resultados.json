@@ -1,0 +1,134 @@
+{
+  "inicio": "2026-11-14T20:38:54.357Z",
+  "fuso": "America/Cuiaba",
+  "plataforma": "win32",
+  "node": "v24.20.0",
+  "playwright": "1.62.1",
+  "commit": "0cdd8faa2cdc7868f2f28c3ae6a9504c3f148d80",
+  "arquivos": {
+    "index.html": "0b1023aa0098d90fad660271debe76c3a60feccfc60d394aee8736196742c06f",
+    "style.css": "5b0141e313da188cb40b7ee05922444b1dfa1cea72097641dad18ae9011dd34f",
+    "script.js": "7514f86b31e5ef10a67fa694021d5892bc718698dd48e37d073761f7fd24ae7d"
+  },
+  "resultados": [
+    {
+      "id": "WEB01",
+      "descricao": "Seis livros iniciais e busca por título/autor, caixa e acentos",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB02",
+      "descricao": "Todos os filtros, combinações, contador e estado vazio",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB03",
+      "descricao": "Marcar e desmarcar com persistência após recarga",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB04",
+      "descricao": "Lista legada válida e duplicações sem perder títulos conhecidos",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-1",
+      "descricao": "Lista inválida {x: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-2",
+      "descricao": "Lista inválida null: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-3",
+      "descricao": "Lista inválida {}: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-4",
+      "descricao": "Lista inválida \"Duna\": aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-5",
+      "descricao": "Lista inválida 42: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-6",
+      "descricao": "Lista inválida [1]: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-7",
+      "descricao": "Lista inválida [\"Duna\",null]: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB05-8",
+      "descricao": "Lista inválida [\"Título desconhecido\"]: aviso, catálogo ativo e recuperação",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB06",
+      "descricao": "Leitura bloqueada não interrompe busca nem diálogo",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB07",
+      "descricao": "Gravação bloqueada mantém seleção anterior inclusive após recarga",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB08",
+      "descricao": "Obrigatórios, sucesso demonstrativo, sem envio/persistência dos campos",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB09",
+      "descricao": "Tab e Shift+Tab contidos, Escape, botão fechar e retorno do foco",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB10",
+      "descricao": "Foco visível em links, botões, busca, filtro e campos do formulário",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB11-1440",
+      "descricao": "Layout e links das seções em 1440 × 900",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB11-768",
+      "descricao": "Layout e links das seções em 768 × 900",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB11-390",
+      "descricao": "Layout e links das seções em 390 × 900",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB11-320",
+      "descricao": "Layout e links das seções em 320 × 900",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB12",
+      "descricao": "Abertura direta file://, busca e marcação após recarga",
+      "resultado": "APROVADO"
+    },
+    {
+      "id": "WEB13",
+      "descricao": "Textos explicam demonstração e armazenamento neste navegador",
+      "resultado": "APROVADO"
+    }
+  ],
+  "navegador": "chrome 157.0.8103.78",
+  "fim": "2026-11-14T20:39:08.920Z",
+  "aprovados": 23,
+  "reprovados": 0
+}

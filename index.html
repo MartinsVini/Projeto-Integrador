@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lendo pelo Mundo: uma comunidade simples para descobrir livros e compartilhar leituras." />
+    <meta name="description" content="Lendo pelo Mundo: descubra livros e marque o que deseja ler neste navegador." />
     <title>Lendo pelo Mundo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -29,7 +29,7 @@
           <div class="hero-copy">
             <p class="eyebrow">Comunidade de leitores em Campo Grande</p>
             <h1>Um livro pode levar você para qualquer lugar.</h1>
-            <p class="hero-text">Encontre histórias, acompanhe suas leituras e descubra pontos para trocar livros perto de você.</p>
+            <p class="hero-text">Descubra livros, marque o que deseja ler e conheça uma representação de espaços de leitura em Campo Grande.</p>
             <div class="hero-actions">
               <a class="button" href="#catalogo">Explorar livros</a>
               <button class="button button-light" data-open-modal>Criar cadastro</button>
@@ -71,6 +71,8 @@
             </label>
           </div>
 
+          <p class="section-text">Os livros marcados ficam salvos neste navegador. Use o mesmo botão para retirar um livro da lista.</p>
+          <p id="storage-message" role="status" aria-live="polite"></p>
           <div class="book-grid" id="book-grid">
             <article class="book-card" data-title="o pequeno principe" data-author="antoine de saint-exupery" data-genre="fantasia" data-book="O Pequeno Príncipe">
               <div class="book-cover cover-blue"><span>O Pequeno<br />Príncipe</span></div>
@@ -139,8 +141,8 @@
           </div>
           <div class="steps-grid">
             <article class="step-card"><span class="step-number">01</span><h3>Encontre um livro</h3><p>Pesquise no catálogo por título, autor ou gênero.</p></article>
-            <article class="step-card"><span class="step-number">02</span><h3>Monte sua lista</h3><p>Marque os livros que você quer ler e acompanhe seu progresso.</p></article>
-            <article class="step-card"><span class="step-number">03</span><h3>Compartilhe</h3><p>Descubra pessoas e pontos de leitura próximos de você.</p></article>
+            <article class="step-card"><span class="step-number">02</span><h3>Marque seu interesse</h3><p>Escolha os livros que deseja ler. A marcação fica salva neste navegador.</p></article>
+            <article class="step-card"><span class="step-number">03</span><h3>Explore a demonstração</h3><p>Veja a representação ilustrativa de espaços de leitura em Campo Grande.</p></article>
           </div>
         </div>
       </section>
@@ -149,12 +151,12 @@
         <div class="container map-layout">
           <div>
             <p class="eyebrow">Leitura perto de você</p>
-            <h2>Pontos de troca em Campo Grande</h2>
-            <p class="section-text">Esta é uma demonstração visual dos locais que poderão receber trocas, encontros e pequenas bibliotecas comunitárias.</p>
+            <h2>Espaços de leitura em Campo Grande</h2>
+            <p class="section-text">Mapa ilustrativo com exemplos de espaços de leitura. Consulte informações oficiais sobre funcionamento e serviços de cada local antes da visita.</p>
             <div class="location-list">
-              <div class="location-item"><span class="location-pin">●</span><div><strong>Praça Ary Coelho</strong><small>Centro · Troca de livros</small></div></div>
+              <div class="location-item"><span class="location-pin">●</span><div><strong>Praça Ary Coelho</strong><small>Centro · Espaço público</small></div></div>
               <div class="location-item"><span class="location-pin">●</span><div><strong>Parque das Nações Indígenas</strong><small>Jardim Veraneio · Leitura ao ar livre</small></div></div>
-              <div class="location-item"><span class="location-pin">●</span><div><strong>Biblioteca Pública Estadual</strong><small>Amambaí · Acervo comunitário</small></div></div>
+              <div class="location-item"><span class="location-pin">●</span><div><strong>Biblioteca Pública Estadual</strong><small>Biblioteca · Exemplo ilustrativo</small></div></div>
             </div>
           </div>
           <div class="map-card" aria-label="Mapa ilustrativo de Campo Grande">
@@ -171,12 +173,12 @@
       <div class="container footer-content"><strong>📖 Lendo pelo Mundo</strong><span>Projeto Integrador II · MVP educacional</span></div>
     </footer>
 
-    <div class="modal-backdrop" id="auth-modal" hidden>
-      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <dialog class="modal-backdrop" id="auth-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <section class="modal">
         <button class="modal-close" data-close-modal aria-label="Fechar">×</button>
         <p class="eyebrow">Comece sua jornada</p>
         <h2 id="modal-title">Entrar ou criar cadastro</h2>
-        <p class="modal-text">Nesta versão, o formulário é apenas demonstrativo.</p>
+        <p class="modal-text" id="modal-description">Cadastro demonstrativo. Use dados fictícios. Os campos preenchidos não são enviados nem salvos pela aplicação.</p>
         <form id="auth-form">
           <label>Nome ou e-mail<input required type="text" placeholder="Digite seu nome" /></label>
           <label>Senha<input required type="password" placeholder="Digite sua senha" /></label>
@@ -184,7 +186,7 @@
         </form>
         <p class="form-message" id="form-message" role="status"></p>
       </section>
-    </div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>

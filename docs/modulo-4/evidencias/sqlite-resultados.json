@@ -1,0 +1,26 @@
+{
+  "data": "2026-11-14T20:39:09.416378+00:00",
+  "python": "3.13.7",
+  "sqlite": "3.50.4",
+  "commit": "0cdd8faa2cdc7868f2f28c3ae6a9504c3f148d80",
+  "sha256": {
+    "banco-de-dados\\01-esquema.sql": "061e3f341ba73f7fad940f39c9cdcf250ef65538ff85a749ec0cb4819bf1c480",
+    "banco-de-dados\\02-dados.sql": "9b8cc843fd022089682fcf4893b4feb94fc9d8c67b78fdf1821d345cca483eb8",
+    "banco-de-dados\\03-manipulacao.sql": "36ad634515f6772476b496f8b3fbe8695a87d9f794638b4b5ba87eb0f4aea74a",
+    "banco-de-dados\\04-consultas.sql": "9bb715abfe58a0bc71ac4423ad34f7bbef5ac62905a826d361e0e22656afc48b",
+    "banco-de-dados\\executar.py": "5e872739f2f09bbbaff207b65e7e5179bee16c4d72e67220cf83fc66bf7e877e",
+    "banco-de-dados\\testar.py": "30c0970c39b6598aa9c3a777ada630dec62cccf35c798c063bf082edf3bb706f"
+  },
+  "execucoes": [
+    {
+      "arquivo": "testar.py",
+      "saida": "test_coautoria_e_releitura (__main__.BancoDoClube.test_coautoria_e_releitura) ... ok\ntest_guia_e_historico (__main__.BancoDoClube.test_guia_e_historico) ... ok\ntest_manutencao_do_guia (__main__.BancoDoClube.test_manutencao_do_guia) ... ok\ntest_restricoes (__main__.BancoDoClube.test_restricoes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.006s\n\nOK\n",
+      "codigo_saida": 0
+    },
+    {
+      "arquivo": "executar.py",
+      "saida": "etapa | nome | endereco | bairro\nInserção | Sebo Temporário | Rua Exemplo, 100 | Centro\n\netapa | nome | bairro\nCorreção | Sebo Temporário | Amambaí\n\netapa | encontrados\nFiltro antigo | 0\n\netapa | encontrados\nApós remoção | 0\n\nnome | endereco | bairro | descricao\nBiblioteca das Letras | Rua Exemplo, 20 | Centro | Biblioteca pública de demonstração.\n\nnome | latitude | longitude\nBiblioteca das Letras | -20.47 | -54.62\nSebo Ipê | -20.46 | -54.61\n\ntitulo | inicio | conclusao | situacao\nTorto Arado | 2026-07-01 | 2026-07-31 | Concluída\nO Pequeno Príncipe | 2026-08-01 | 2026-08-31 | Concluída\nCapitães da Areia | 2026-09-01 | 2026-09-30 | Concluída\nCem Anos de Solidão | 2026-10-01 | 2026-10-31 | Concluída\nDuna | 2026-11-01 | — | Em andamento\n\npais | leituras_concluidas\nBrasil | 2\nColômbia | 1\nFrança | 1\n\n",
+      "codigo_saida": 0
+    }
+  ]
+}

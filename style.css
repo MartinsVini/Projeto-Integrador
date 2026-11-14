@@ -12,6 +12,8 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+section[id] { scroll-margin-top: 150px; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
 button, input, select { font: inherit; }
@@ -84,5 +86,11 @@ select { min-width: 190px; padding: 13px 14px; color: var(--ink); outline: 0; }
 
 .modal-backdrop { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 20px; background: rgba(20, 36, 30, .58); }.modal-backdrop[hidden] { display: none; }.modal { position: relative; width: min(100%, 440px); padding: 34px; border-radius: 18px; background: var(--cream); box-shadow: var(--shadow); }.modal-close { position: absolute; top: 12px; right: 16px; border: 0; color: var(--muted); background: transparent; cursor: pointer; font-size: 1.8rem; }.modal-text { color: var(--muted); }.modal form { display: grid; gap: 14px; }.modal label { display: grid; gap: 6px; color: var(--muted); font-size: .85rem; font-weight: 700; }.modal input { width: 100%; padding: 12px; outline-color: var(--green); }.form-message { min-height: 20px; margin: 15px 0 0; color: var(--green); font-weight: 700; font-size: .9rem; }
 
-@media (max-width: 850px) { .main-nav { gap: 12px; }.main-nav a { display: none; }.hero-grid, .map-layout { grid-template-columns: 1fr; gap: 35px; }.hero { padding: 65px 0; }.hero-card { min-height: 240px; }.book-grid { grid-template-columns: repeat(2, 1fr); } }
+dialog.modal-backdrop { display: none; width: 100%; max-width: 100%; height: 100%; max-height: 100%; margin: 0; border: 0; color: var(--ink); overflow: auto; }
+dialog.modal-backdrop[open] { display: grid; }
+dialog.modal-backdrop .modal { max-height: calc(100dvh - 40px); overflow-y: auto; }
+dialog.modal-backdrop::backdrop { background: transparent; }
+.book-cover { overflow-wrap: anywhere; }
+:is(a, button, input, select):focus-visible { outline: 3px solid #172f73; outline-offset: 3px; }
+@media (max-width: 850px) { .header-content { flex-wrap: wrap; gap: 8px; padding-block: 10px; }.main-nav { flex: 1 0 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: .82rem; }.main-nav a { display: inline-block; padding-block: 7px; }.hero-grid, .map-layout { grid-template-columns: 1fr; gap: 35px; }.hero { padding: 65px 0; }.hero-card { min-height: 240px; }.book-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .container { width: min(100% - 28px, 1120px); }.header-content { min-height: 64px; }.brand { font-size: .88rem; }.section { padding: 62px 0; }.section-heading { display: block; }.result-count { display: block; margin-top: 15px; }.filters { display: grid; }.book-grid, .steps-grid { grid-template-columns: 1fr; }.book-card { grid-template-columns: 92px 1fr; }.book-cover { min-height: 130px; }.footer-content { display: grid; align-content: center; gap: 4px; }.hero-actions .button { width: 100%; }.modal { padding: 28px 22px; } }
