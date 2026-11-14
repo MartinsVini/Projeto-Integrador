@@ -13,7 +13,6 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-:is(a, button, input, select):focus-visible { outline: 3px solid #172f73; outline-offset: 3px; }
 section[id] { scroll-margin-top: 150px; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
@@ -91,5 +90,6 @@ dialog.modal-backdrop { display: none; width: 100%; max-width: 100%; height: 100
 dialog.modal-backdrop[open] { display: grid; }
 dialog.modal-backdrop .modal { max-height: calc(100dvh - 40px); overflow-y: auto; }
 dialog.modal-backdrop::backdrop { background: transparent; }
+:is(a, button, input, select):focus-visible { outline: 3px solid #172f73; outline-offset: 3px; }
 @media (max-width: 850px) { .header-content { flex-wrap: wrap; gap: 8px; padding-block: 10px; }.main-nav { flex: 1 0 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: .82rem; }.main-nav a { display: inline-block; padding-block: 7px; }.hero-grid, .map-layout { grid-template-columns: 1fr; gap: 35px; }.hero { padding: 65px 0; }.hero-card { min-height: 240px; }.book-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .container { width: min(100% - 28px, 1120px); }.header-content { min-height: 64px; }.brand { font-size: .88rem; }.section { padding: 62px 0; }.section-heading { display: block; }.result-count { display: block; margin-top: 15px; }.filters { display: grid; }.book-grid, .steps-grid { grid-template-columns: 1fr; }.book-card { grid-template-columns: 92px 1fr; }.book-cover { min-height: 130px; }.footer-content { display: grid; align-content: center; gap: 4px; }.hero-actions .button { width: 100%; }.modal { padding: 28px 22px; } }
