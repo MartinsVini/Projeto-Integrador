@@ -1,0 +1,8 @@
+{
+  "name": "lendo-pelo-mundo-verificacoes",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ferramentas opcionais de teste; a página não depende de Node.js",
+  "scripts": { "test": "node testes/web.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
